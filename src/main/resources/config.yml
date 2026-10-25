@@ -1,0 +1,16 @@
+# A server restart is needed after changing these values.
+snowball:
+  cooldown-seconds: 7
+  slowness-seconds: 2
+  # Increased from 1.9 in v1.1, for ~2 blocks additional push.
+  # Actual travel depends on server physics and surroundings.
+  horizontal-velocity: 2.45
+  vertical-velocity: 0.40
+
+tnt:
+  fuse-seconds: 3
+  # Area-of-effect radius, not a block-destroying explosion power.
+  radius-blocks: 2.75
+  # Health points: 4 = 2 hearts BEFORE potion/enchantment effects.
+  # Magic-type damage bypasses normal armor reduction (incl. netherite).
+  damage-health-points: 4.0
