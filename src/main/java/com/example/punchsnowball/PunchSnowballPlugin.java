@@ -72,7 +72,7 @@ public final class PunchSnowballPlugin extends JavaPlugin implements Listener {
         meta.setDisplayName(ChatColor.AQUA + "Punch Snowball");
         meta.setLore(List.of(
                 ChatColor.GRAY + "Infinite throws",
-                ChatColor.GRAY + (snowballCooldownTicks / 20) + "-second cooldown",
+                ChatColor.GRAY + "" + (snowballCooldownTicks / 20) + "-second cooldown",
                 ChatColor.LIGHT_PURPLE + "Extra-strong knockback + Slowness II"));
         meta.getPersistentDataContainer().set(snowballKey, PersistentDataType.BYTE, (byte) 1);
         item.setItemMeta(meta);
@@ -86,7 +86,7 @@ public final class PunchSnowballPlugin extends JavaPlugin implements Listener {
         meta.setLore(List.of(
                 ChatColor.GRAY + "Right-click a block to ignite",
                 ChatColor.GRAY + "Reusable - never consumed",
-                ChatColor.YELLOW + (tntFuseTicks / 20) + "-second fuse / small blast",
+                ChatColor.YELLOW + "" + (tntFuseTicks / 20) + "-second fuse / small blast",
                 ChatColor.RED + "Approx. 2 hearts of damage"));
         // Real enchantment shimmer, no gameplay enchantment necessary.
         meta.setEnchantmentGlintOverride(true);
